@@ -40,9 +40,55 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .pizza{
+            background-color: #ffcde4;
+            width: 300px;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid #920c67;
+            border-radius: 5px;
+        }
+
+        .margerita-pizza{
+            width: 100%;
+        }
+
+        .pizza-header{
+            font-size: 18px;
+            color: #cf1115;
+        }
+
+        .pizza-price{
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .pizza-highlight{
+            background-color: #00879E;
+        }
+
+        .pizza-buy-now{
+            background-color: rgb(155, 248, 130);
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
+    <section class="container">
     <div class="watch">
         <img src="smart-watch.jpg" alt="smart-watch" class="smart-watch"/>
         <h1 class="watch-header">Water Proof Smart watch</h1>
@@ -56,5 +102,21 @@
 
         <button class="btn-buy-now">Buy Now</button>
     </div>
+
+    <div class="pizza">
+        <img src="pizza.jpg" alt="margerita-pizza" class="margerita-pizza" />
+        <h1 class="pizza-header">Margherita Pizza</h1>
+        <p>
+             It is a <span class="pizza-highlight"> Italian favorite</span> , featuring a thin, crispy crust topped with rich tomato sauce, creamy mozzarella cheese, and fresh basil leaves.
+        </p>
+
+        <p>
+            ₹ <del> 250/-</del> <span class="pizza-price"> 160/-</span> Only
+        </p>
+
+        <button class="pizza-buy-now">Buy Now</button>
+
+    </div>
+</section>
 </body>
 </html>
